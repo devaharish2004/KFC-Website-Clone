@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>KFC | Order KFC Chicken Online & Find Restaurants</title>
+</head>
+<body>
+    <!--navbar-->
+    <div class="flex flex-row justify-between mt-4 bg-neutral-50 sticky top-0 lg:h-24">
+        <!--hamburger button-->
+        <div class="space-y-1 pl-4 mt-4 lg:hidden">
+            <div class="w-5 h-0.5 bg-gray-500 font-medium"></div>
+            <div class="w-5 h-0.5 bg-gray-500 font-medium"></div>
+            <div class="w-5 h-0.5 bg-gray-500 font-medium"></div>
+        </div>
+        <!--KFC title-->
+        <div class = "mt-3 ml-10 lg:hidden">
+            <a href = "#"><img src = "KFC Logo.svg"></a>
+        </div>
+        <!--bucket and amount icon-->
+        <div class = "flex flex-row items-end pr-2 lg:hidden">
+            <!--amount-->
+            <div class = "lg:hidden">
+                <p class = "text-sm">&#8377;0</p>
+            </div>
+            <!--bucket-->
+            <div class = "lg:hidden">
+                <a href = "#"><img src = "bucket_cart_icon.svg" class = "w-10 h-10"></a>
+            </div>
+        </div>
+        <!--Large screen menu-->
+        <div class = "hidden lg:flex lg:flex-row justify-around">
+            <div class = "m-8 pl-24 h-25 w-25">
+                <a href="#"><img src="KFC Logo.svg"></a>
+            </div>
+            <div class = "m-8 ml-2 pl-2 font-semibold">
+                <a href="#"><p>Menu</p></a>
+            </div>
+            <div class = "m-8 ml-2 pl-2 font-semibold">
+                <a href="#"><p>Deals</p></a>
+            </div>
+        </div>
+        <!--Bucket for large screen-->
+        <div class = "hidden lg:flex lg:flex-row lg:justify-between">
+            <!--Sign in-->
+            <div class = "flex flex-row justify-between pr-4 m-8">
+                <div class = "mr-2">
+                    <img src="Account_Icon.svg">
+                </div> 
+                <div>
+                    <a href="#">Sign in</a>
+                </div>
+            </div>
+            <!--Bucket-->
+            <div class = "flex flex-row justify-between m-6">
+                <div class = "mt-4">
+                    <p class = "text-sm">&#8377;0</p>
+                </div>
+                <div>
+                    <a href = "#"><img src = "bucket_cart_icon.svg" class = "w-10 h-10"></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Bottom nav-->
+    <div class = "w-full h-full bg-neutral-900 flex flex-row justify-between items-center p-6 lg:justify-center">
+        <!--Text-->
+        <div class = "flex flex-col lg:flex-row">
+            <!--Location-->
+            <div class = "flex flex-row pb-1 lg:pr-4">
+                <!--Location img-->
+                <div class = "pr-4">
+                    <img src = "Location img.svg">
+                </div>
+                <!--Location text-->
+                <div>
+                    <p class = "text-sm font-semibold text-neutral-50">Pick up at:KFC Chennai-Sholinganallur</p>
+                </div>
+            </div>
+            <!--ASAP-->
+            <div class = "flex flex-row pr-4">
+                <!--ASAP img-->
+                <div class = "pr-4">
+                    <img src = "Clock img.svg" class = "h-4">
+                </div>
+                <!--ASAP text-->
+                <div>
+                    <p class = "text-neutral-50 text-sm font-semibold">ASAP</p>
+                </div>
+            </div>
+        </div>
+        <!--Change button-->
+        <div class = "bg-neutral-900">
+            <button type = "submit" class = "text-neutral-50 border rounded-full border-white p-0.5 pl-2 pr-2 font-semibold text-sm mr-2">Change</button>
+        </div>
+    </div>
+    <!--3 strips-->
+    <div class = "flex flex-row justify-center">
+        <div>
+            <img src = "3_Strips.png">
+        </div>
+    </div>
+    <!--order type-->
+    <div>
+        <!--text-->
+        <div>
+            <h1 class = "font-sans font-black text-xl pl-20 pt-6 lg:ml-80 lg:pl-40">SELECT YOUR ORDER TYPE TO START</h1>
+        </div>
+        <!--buttons-->
+        <div class = "flex flex-row space-x-0 justify-center mt-10">
+            <div>
+                <button class = "font-sans font-black text-md rounded-full border-white bg-gray-300 p-3 px-6">DELIVERY</button>
+            </div>
+            <div>
+                <button class = "font-sans text-neutral-50 font-extrabold text-md rounded-full border-white bg-red-600 p-3 px-6">PICK UP</button>
+            </div>
+            <div>
+                <button class = "font-sans font-black text-md rounded-full border-white bg-gray-300 p-3 px-6">DINE IN</button>
+            </div>
+        </div>
+    </div>
+    <!--Biriyani banner-->
+    <div class = "mt-5 lg:hidden">
+        <a href = "#"><img src = "Biryani_Banner_375x250px.webp" class = "w-full h-full"></a>
+    </div>
+    <div class = "mt-5 hidden lg:block">
+        <a href = "#"><img src = "Biryani_Banner_1440x396px.webp" class = "w-full h-full"></a>
+    </div>
+    <!--stripes-->
+    <div class = "flex flex-row justify-center lg:block lg:ml-40">
+        <div>
+            <img src = "3_Strips.png">
+        </div>
+    </div>
+    <!--Welcome-->
+    <div class = "flex flex-row justify-center lg:block lg:ml-40">
+        <div class = "mt-8 mb-20">
+            <h1 class = "font-sans font-black text-xl lg:text-2xl">WELCOME TO KFC!</h1>
+        </div>
+    </div>
+    <!--Browse-->
+    <div class = "pb-4 m-8">
+        <h1 class = "font-sans font-black text-md lg:text-xl">BROWSE CATEGORIES</h1>   
+    </div>
+    <!--grid-->
+    <div class = "grid grid-cols-2 gap-4 pl-8 pr-8 mb-20 lg:grid-cols-4">
+        <div> 
+            <div>
+                <img src = "Chicken Buckets.jpg">
+            </div>
+            <div class = "mt-5 ">
+                <p>CHICKEN BUCKETS</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src = "Hot deals.jpg">
+            </div>
+            <div class = "mt-5 ">
+                <p>HOT DEALS</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src = "hot launches.jpg">
+            </div>
+            <div class = "mt-5 ">
+                <p>HOT LAUNCHES</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src = "Box meals.jpg">
+            </div>
+            <div class = "mt-5">
+                <p>BOX MEALS</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src = "Burgers.jpg">
+            </div>
+            <div class = "mt-5 ">
+                <p>BURGERS</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src = "Biriyani Buckets.jpg">
+            </div>
+            <div class = "mt-5 ">
+                <p>BIRIYANI BUCKETS</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src = "Snack.jpg">
+            </div>
+            <div class = "mt-5 ">
+                <p>SNACK</p>
+            </div>
+        </div>
+        <div class = "lg:hidden">
+            <div>
+                <img src = "Beverages and Desserts.jpg">
+            </div>
+            <div class = "mt-5 ">
+                <p>BEVERAGES AND DESSERTS</p>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src = "Finger_lickin_good.svg">
+            </div>
+            <div class = "mt-14">
+                <a href = "#"><p class = "text-sm lg:text-lg font-semibold" >View all menu &#x2192;</p></a>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div class = "bg-neutral-900">
+        <!--stripes-->
+        <div class = "flex flex-row justify-center">
+            <div>
+                <img src = "3_Strips.png">
+            </div>
+        </div>
+        <!--offers-->
+        <div class = "flex flex-col items-center">
+            <div class = "mt-4 text-neutral-50 font-extrabold">
+                <h1>OFFERS &#x26; DEALS</h1>
+            </div>
+            <div class = "mt-2 text-neutral-50 text-sm">
+                <a href = "#"><p>View all deals &#x2192;</p></a>
+            </div>
+        </div>
+        <!--logo-->
+        <div class = "flex flex-row justify-center mt-24 lg:hidden">
+            <div>
+                <img src = "KFC_Logo.svg">
+            </div>
+        </div>
+        <!--footer menus-->
+        <div class = "flex flex-col text-neutral-50 text-sm gap-4 pl-8 mt-12 lg:hidden">
+            <div>
+                <a href = "#"><p>KFC Food</p></a>
+            </div>
+            <div>
+                <a href = "#"><p>Support</p></a>
+            </div>
+            <div>
+                <a href = "#"><p>Legal</p></a>
+            </div>
+            <div>
+                <a href = "#"><p>KFC India</p></a>
+            </div>
+            <div class = "flex flex-row gap-2">
+                <div>
+                    <img src = "Location img.svg">
+                </div>
+                <div>
+                    <a href = "#"><p>Find a KFC</p></a>
+                </div>
+            </div>
+            <div>
+                <a href = "#"><p>Download App</p></a>
+            </div>
+        </div>
+        <!--Download on google play and app store-->
+        <div class="flex flex-row justify-center gap-4 mt-4 lg:hidden">
+            <div>
+                <a href = "#"><img src = "google_play.svg"></a>
+            </div>
+            <div>
+                <a href = "#"><img src="apple.svg"></a>
+            </div>
+        </div>
+        <!--social links-->
+        <div class = "flex flex-row gap-2 mt-12 lg:hidden">
+            <div>
+                <a href = "#"><img src="Social_Insta_White.svg" alt="Instagram"></a>
+            </div>
+            <div>
+                <a href="#"><img src="Social_Facebook_White.svg" alt="Facebook"></a>
+            </div>
+            <div>
+                <a href="#"><img src="Social_Twitter_White.svg" alt="Twitter"></a>
+            </div>
+        </div>
+        <!--copyright-->
+        <div class = "flex flex-row justify-center mt-8 text-sm text-neutral-50 font-sans lg:hidden">
+            <div>
+                <p>Copyright &#xa9; KFC Corporation 2021 All Rights Reserved</p>
+            </div>
+        </div>
+        <!--for lg pages-->
+        <div class = "hidden lg:flex lg:flex-row lg:justify-around lg:mt-20 lg:pb-40 lg:text-neutral-50 lg:text-sm">
+            <!--logo-->
+            <div>
+               <a href="#"><img src="KFC_Logo.svg"></a>
+            </div>
+            <!--kfc food-->
+            <div class = "flex flex-col gap-2">
+                <div>
+                    <p>KFC Food</p>
+                </div>
+                <div>
+                    <a href="#"><p>Menu</p></a>
+                </div>
+                <div>
+                    <a href="#">Order Lookup</a>
+                </div>
+                <div>
+                    <a href="#">Gift Card</a>
+                </div>
+                <div>
+                    <a href="#">Nutrition &#x26; Allergen</a>
+                </div>
+            </div>
+            <!--Support-->
+            <div class = "flex flex-col gap-2">
+                <div>
+                    <p>Support</p>
+                </div>
+                <div>
+                    <a href="#"><p>Get Help</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>Contact us</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>KFC Feedback</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>Privacy Policy</p></a>
+                </div>
+            </div>
+            <!--Legal-->
+            <div class = "flex flex-col gap-2">
+                <div>
+                    <p>Legal</p>
+                </div>
+                <div>
+                    <a href="#"><p>Terms and Conditions</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>Privacy Policy</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>Disclaimer</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>Caution Notice</p></a>
+                </div>
+            </div>
+            <!--KFC India-->
+            <div class = "flex flex-col gap-2">
+                <div>
+                    <p>KFC India</p>
+                </div>
+                <div>
+                    <a href="#"><p>About KFC</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>KFC Care</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>Careers</p></a>
+                </div>
+                <div>
+                    <a href="#"><p>Our Golden Past</p></a>
+                </div>
+            </div>
+            <!--Find-->
+            <div class = "flex flex-row gap-2">
+                <div>
+                    <img src = "Location img.svg">
+                </div>
+                <div>
+                    <a href="#" class = "underline decoration-white">Find a KFC</a>
+                </div>
+            </div>
+            <div class = "flex flex-row gap-2">
+                <div>
+                    <a href="#"><img src="google_play.svg"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="apple.svg"></a>
+                </div>
+            </div>
+        </div>
+        <div class = "lg:flex lg:flex-row lg:justify-center lg:text-sm lg:text-neutral-50 lg:font-sans hidden">
+            <div class = "pr-40 ml-80">
+                <p>Copyright &#xa9; KFC Corporation 2021 All Rights Reserved</p>
+            </div>
+            <div class = "flex flex-row gap-2 pl-80">
+                <div>
+                    <a href="#"><img src="Social_Insta_White.svg"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="Social_Facebook_White.svg"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="Social_Twitter_White.svg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
